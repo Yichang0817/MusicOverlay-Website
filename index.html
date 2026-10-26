@@ -79,7 +79,12 @@
         <h2 data-i18n-html="screenshotsTitle">The real interface.<br><span>Captured in action.</span></h2>
         <p data-i18n="screenshotsIntro">Six original PNG captures from the running MusicOverlay application. The gallery preserves each source image's aspect ratio and never enlarges it beyond its native size.</p>
       </div>
-      <div class="screenshots-grid original-screenshots">
+      <div class="screenshot-mode-group">
+        <div class="screenshot-mode-heading">
+          <span class="mode-index">01</span>
+          <div><h3 data-i18n="standardModeTitle">Standard player</h3><p data-i18n="standardModeText">Full player layout with album artwork, track details, playback progress and controls.</p></div>
+        </div>
+        <div class="screenshots-grid original-screenshots standard-screenshots">
         <article class="screenshot-card">
           <a class="screenshot-media original-image" href="assets/player-one-ok-rock.png" target="_blank" rel="noreferrer" aria-label="Open original screenshot: ONE OK ROCK — Wherever you are" data-i18n-aria="screenshot1Aria">
             <img src="assets/player-one-ok-rock.png" alt="ONE OK ROCK — Wherever you are — MusicOverlay screenshot." data-i18n-alt="screenshot1Alt" loading="lazy">
@@ -120,7 +125,15 @@
             <p data-i18n="screenshot4Text">Japanese vocal track</p>
           </div>
         </article>
-        <article class="screenshot-card">
+        </div>
+      </div>
+      <div class="screenshot-mode-group compact-screenshot-group">
+        <div class="screenshot-mode-heading">
+          <span class="mode-index">02</span>
+          <div><h3 data-i18n="compactModeTitle">Compact mode</h3><p data-i18n="compactModeText">A slim layout for a quick glance at the track and progress.</p></div>
+        </div>
+        <div class="screenshots-grid original-screenshots compact-screenshots">
+        <article class="screenshot-card compact-screenshot-card">
           <a class="screenshot-media original-image" href="assets/player-compact-mode.png" target="_blank" rel="noreferrer" aria-label="Open original screenshot: Compact Mode" data-i18n-aria="screenshot5Aria">
             <img src="assets/player-compact-mode.png" alt="Compact Mode — MusicOverlay screenshot." data-i18n-alt="screenshot5Alt" loading="lazy">
           </a>
@@ -140,6 +153,8 @@
             <p data-i18n="screenshot6Text">Minimal monochrome theme</p>
           </div>
         </article>
+      </div>
+        </div>
       </div>
       <p class="screenshots-note"><span></span> <span data-i18n="screenshotsNote">Original PNG files are used directly. Select an image to open the source-size file in a new tab.</span></p>
     </section>
@@ -178,7 +193,7 @@
           </div>
         </article>
       </div>
-      <p class="screenshots-note"><span></span> <span data-i18n="videosNote">Videos are served as the uploaded MP4 files without re-encoding.</span></p>
+      <div class="screenshots-note demo-note"><span></span> <span data-i18n="videosNote">Videos are served as the uploaded MP4 files without re-encoding.</span></div>
     </section>
 
     <section class="architecture-section" id="engineering">

@@ -50,3 +50,8 @@ The site supports English and Traditional Chinese (繁體中文) across the navi
 - `i18n.js` contains the translation dictionaries, language toggle behavior, accessibility-label translations, and saved language preference.
 - `index.html` marks translatable page content and accessibility attributes.
 - `style.css` styles the language control while preserving the existing black-and-gold theme.
+
+
+## Screenshot gallery
+
+Screenshots are grouped by the actual interface layout: Standard Player (five full player examples) and Compact Mode (one slim player example). Original media files are displayed without forced upscaling.
