@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0c10">
+  <meta name="description" content="MusicOverlay is a lightweight Windows music overlay built with Electron, React, and TypeScript.">
+  <title>MusicOverlay — Your music, always in view</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="MusicOverlay home">
+      <span class="brand-mark" aria-hidden="true">M</span>
+      <span>MusicOverlay</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#features">Features</a>
+      <a href="#engineering">Engineering</a>
+      <a href="#roadmap">Roadmap</a>
+      <a class="nav-cta" href="https://github.com/Yichang0817/MusicOverlay" target="_blank" rel="noreferrer">Source code ↗</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> WINDOWS DESKTOP PROJECT</p>
+        <h1>Your music.<br><span>Always in view.</span></h1>
+        <p class="hero-lede">A lightweight desktop music overlay for Windows. Keep track of what's playing and control playback without leaving what you're doing.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#features">Explore the project <span aria-hidden="true">↓</span></a>
+          <a class="button button-secondary" href="https://github.com/Yichang0817/MusicOverlay" target="_blank" rel="noreferrer">View source ↗</a>
+        </div>
+        <div class="tech-pills" aria-label="Core technologies">
+          <span>Electron</span><span>React</span><span>TypeScript</span><span>Windows SMTC</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Illustrative concept of the MusicOverlay player interface">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="player-window">
+          <div class="player-top"><span class="window-dots"><i></i><i></i><i></i></span><span class="player-label">NOW PLAYING</span><span class="more">•••</span></div>
+          <div class="album-art">
+            <div class="album-sun"></div><div class="album-mountain mountain-a"></div><div class="album-mountain mountain-b"></div>
+            <span class="album-caption">AFTER<br>HOURS</span>
+          </div>
+          <div class="track-meta"><div><strong>Midnight Signals</strong><span>Illustrative track · Demo Artist</span></div><span class="heart">♡</span></div>
+          <div class="progress-track"><span></span></div>
+          <div class="time-row"><span>1:24</span><span>3:42</span></div>
+          <div class="player-controls"><span>〈</span><span class="play-button">Ⅱ</span><span>〉</span></div>
+          <p class="concept-note">CONCEPT MOCKUP · NOT A LIVE PLAYER</p>
+        </div>
+        <div class="floating-chip chip-top"><span class="chip-icon">♫</span><span><b>Desktop overlay</b><small>Stay in your workflow</small></span></div>
+        <div class="floating-chip chip-bottom"><span class="live-dot"></span><span><b>Windows media</b><small>SMTC integration</small></span></div>
+      </div>
+    </section>
+
+    <section class="metrics-strip section-wrap" aria-label="Project highlights">
+      <div><span class="metric-value">01</span><span class="metric-label">Windows desktop app</span></div>
+      <div><span class="metric-value">SMTC</span><span class="metric-label">System media integration</span></div>
+      <div><span class="metric-value">IPC</span><span class="metric-label">Main ↔ renderer bridge</span></div>
+      <div><span class="metric-value">MVP</span><span class="metric-label">Ongoing development</span></div>
+    </section>
+
+    <section class="section-wrap section-block" id="features">
+      <div class="section-heading">
+        <p class="eyebrow">01 / FEATURES</p>
+        <h2>Useful at a glance.<br><span>Out of your way.</span></h2>
+        <p>MusicOverlay is being built around a simple idea: keep essential playback information accessible in a compact desktop window.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><span class="feature-icon">♫</span><h3>Track information</h3><p>See the current track and artist from a supported Windows media session.</p><span class="feature-tag">Implemented</span></article>
+        <article class="feature-card"><span class="feature-icon">↗</span><h3>Playback progress</h3><p>A renderer-side playback clock keeps the progress display moving smoothly between media updates.</p><span class="feature-tag">Implemented</span></article>
+        <article class="feature-card"><span class="feature-icon">▶</span><h3>Playback controls</h3><p>Control the active media session with previous, play/pause, and next actions.</p><span class="feature-tag">Implemented</span></article>
+        <article class="feature-card"><span class="feature-icon">▣</span><h3>Player selection</h3><p>Organize available players and choose a preferred session, with Auto selection supported by the app architecture.</p><span class="feature-tag">In development</span></article>
+      </div>
+    </section>
+
+    <section class="architecture-section" id="engineering">
+      <div class="section-wrap architecture-layout">
+        <div class="section-heading">
+          <p class="eyebrow">02 / ENGINEERING</p>
+          <h2>Built to connect<br><span>the right layers.</span></h2>
+          <p>The renderer handles presentation while the Electron main process coordinates media access, IPC, and background work.</p>
+          <a class="text-link" href="https://github.com/Yichang0817/MusicOverlay" target="_blank" rel="noreferrer">Explore the source repository ↗</a>
+        </div>
+        <div class="architecture-diagram" role="img" aria-label="Architecture diagram: React UI connects through preload API and IPC to MediaManager, Worker Thread and Windows SMTC">
+          <div class="arch-node arch-ui"><span>01</span><div><b>React UI</b><small>Player & progress display</small></div></div>
+          <div class="arch-connector"><span>window.api.media</span><i>↓</i></div>
+          <div class="arch-node"><span>02</span><div><b>Preload API + IPC</b><small>Controlled renderer bridge</small></div></div>
+          <div class="arch-connector"><span>IPC messages</span><i>↓</i></div>
+          <div class="arch-node arch-main"><span>03</span><div><b>MediaManager</b><small>Session selection & commands</small></div></div>
+          <div class="arch-split"><div><i>↙</i><small>Background worker</small></div><div><i>↘</i><small>Native controller</small></div></div>
+          <div class="arch-bottom"><div class="arch-node"><span>04</span><div><b>Worker Thread</b><small>SMTC monitoring</small></div></div><div class="arch-node"><span>05</span><div><b>Native bridge</b><small>Rust / Node-API exploration</small></div></div></div>
+          <div class="arch-connector"><span>Windows media platform</span><i>↓</i></div>
+          <div class="arch-node arch-platform"><span>OS</span><div><b>Windows SMTC / GSMTC</b><small>System media sessions</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block challenge-section">
+      <div class="section-heading">
+        <p class="eyebrow">03 / ENGINEERING CHALLENGES</p>
+        <h2>Beyond making it work.</h2>
+        <p>The project has involved state synchronization, smooth UI updates, and bridging a desktop interface to Windows media sessions.</p>
+      </div>
+      <div class="challenge-list">
+        <article><span class="challenge-number">01</span><div><h3>Smooth progress rendering</h3><p>Moved progress-time calculation into a renderer-side PlaybackClock based on <code>performance.now()</code> and animation frames to reduce visible stuttering.</p></div></article>
+        <article><span class="challenge-number">02</span><div><h3>Media-session boundaries</h3><p>Separated UI-facing APIs from main-process media management and worker communication, making responsibilities clearer.</p></div></article>
+        <article><span class="challenge-number">03</span><div><h3>Native integration exploration</h3><p>Added a Rust Node-API controller prototype while retaining the existing SMTC monitoring path during incremental integration.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section-wrap roadmap-section" id="roadmap">
+      <div class="roadmap-panel">
+        <div><p class="eyebrow">04 / STATUS & ROADMAP</p><h2>A work in progress,<br><span>built in milestones.</span></h2><p>MusicOverlay is an evolving personal project. The current focus is validating the architecture, polishing the experience, and preparing a reliable public build.</p></div>
+        <div class="roadmap-items">
+          <div class="roadmap-item complete"><span class="roadmap-mark">✓</span><div><b>Core overlay MVP</b><small>Track display, progress, playback actions</small></div><em>Completed</em></div>
+          <div class="roadmap-item active"><span class="roadmap-mark">↗</span><div><b>Session manager & native path</b><small>Incremental integration and verification</small></div><em>In progress</em></div>
+          <div class="roadmap-item"><span class="roadmap-mark">○</span><div><b>Polish & distribution</b><small>More UI refinement, packaging, and release checks</small></div><em>Planned</em></div>
+        </div>
+      </div>
+      <div class="limitations"><span class="limitations-icon">i</span><p><b>Current limitations</b><br>Behavior can depend on the Windows media session and supported player. Some native integration paths and edge cases still need end-to-end verification. Public downloadable builds are not available from this page yet.</p></div>
+    </section>
+
+    <section class="section-wrap final-cta">
+      <p class="eyebrow">BUILT WITH CURIOSITY</p>
+      <h2>Interested in how it works?</h2>
+      <p>Browse the source to follow the implementation and project progress.</p>
+      <div class="hero-actions"><a class="button button-primary" href="https://github.com/Yichang0817/MusicOverlay" target="_blank" rel="noreferrer">View MusicOverlay source ↗</a><a class="button button-secondary" href="https://github.com/Yichang0817/MusicOverlay-Website" target="_blank" rel="noreferrer">Website repository ↗</a></div>
+      <p class="download-note">Windows download: a public release package will be linked here after packaging and release validation are complete.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer section-wrap"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">M</span><span>MusicOverlay</span></a><span>Personal project · Windows desktop</span><a href="#top">Back to top ↑</a></footer>
+</body>
+</html>
