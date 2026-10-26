@@ -56,4 +56,4 @@ The site supports English and Traditional Chinese (繁體中文) across the navi
 
 ## Screenshot gallery
 
-Screenshots are grouped by the actual interface layout: Medium Mode (four full player examples), Small Mode (two smaller player examples), and Compact Mode (one slim player example). Images preserve their aspect ratios and are not forced to upscale.
+Screenshots are grouped by the actual interface layout: Medium Mode (four full player examples), Small Mode (two smaller player examples), and Compact Mode (one slim player example). Images preserve their aspect ratios and are not forced to upscale. Small Mode uses a two-column gallery on desktop and stacks vertically on narrow screens.
