@@ -67,8 +67,8 @@
       </div>
       <div class="feature-grid">
         <article class="feature-card"><span class="feature-icon">♫</span><h3 data-i18n="featureTrackTitle">Track information</h3><p data-i18n="featureTrackText">See the current track and artist from a supported Windows media session.</p><span class="feature-tag" data-i18n="implemented">Implemented</span></article>
-        <article class="feature-card"><span class="feature-icon">↗</span><h3 data-i18n="featureProgressTitle">Playback progress</h3><p data-i18n="featureProgressText">A renderer-side playback clock keeps the progress display moving smoothly between media updates.</p><span class="feature-tag">Implemented</span></article>
-        <article class="feature-card"><span class="feature-icon">▶</span><h3 data-i18n="featureControlsTitle">Playback controls</h3><p data-i18n="featureControlsText">Control the active media session with previous, play/pause, and next actions.</p><span class="feature-tag">Implemented</span></article>
+        <article class="feature-card"><span class="feature-icon">↗</span><h3 data-i18n="featureProgressTitle">Playback progress</h3><p data-i18n="featureProgressText">A renderer-side playback clock keeps the progress display moving smoothly between media updates.</p><span class="feature-tag" data-i18n="implemented">Implemented</span></article>
+        <article class="feature-card"><span class="feature-icon">▶</span><h3 data-i18n="featureControlsTitle">Playback controls</h3><p data-i18n="featureControlsText">Control the active media session with previous, play/pause, and next actions.</p><span class="feature-tag" data-i18n="implemented">Implemented</span></article>
         <article class="feature-card"><span class="feature-icon">▣</span><h3 data-i18n="featureSelectionTitle">Player selection</h3><p data-i18n="featureSelectionText">Organize available players and choose a preferred session, with Auto selection supported by the app architecture.</p><span class="feature-tag" data-i18n="inDevelopment">In development</span></article>
       </div>
     </section>
@@ -189,16 +189,16 @@
           <p data-i18n="engineeringIntro">The renderer handles presentation while the Electron main process coordinates media access, IPC, and background work.</p>
           <a class="text-link" href="https://github.com/Yichang0817/MusicOverlay" target="_blank" rel="noreferrer"><span data-i18n="sourceRepository">Explore the source repository ↗</span></a>
         </div>
-        <div class="architecture-diagram" role="img" aria-label="Architecture diagram: React UI connects through preload API and IPC to MediaManager, Worker Thread and Windows SMTC">
-          <div class="arch-node arch-ui"><span>01</span><div><b>React UI</b><small>Player & progress display</small></div></div>
+        <div class="architecture-diagram" role="img" aria-label="Architecture diagram: React UI connects through preload API and IPC to MediaManager, Worker Thread and Windows SMTC" data-i18n-aria="architectureDiagram">
+          <div class="arch-node arch-ui"><span>01</span><div><b data-i18n="archReactTitle">React UI</b><small data-i18n="archReactText">Player & progress display</small></div></div>
           <div class="arch-connector"><span>window.api.media</span><i>↓</i></div>
-          <div class="arch-node"><span>02</span><div><b>Preload API + IPC</b><small>Controlled renderer bridge</small></div></div>
+          <div class="arch-node"><span>02</span><div><b data-i18n="archPreloadTitle">Preload API + IPC</b><small data-i18n="archPreloadText">Controlled renderer bridge</small></div></div>
           <div class="arch-connector"><span>IPC messages</span><i>↓</i></div>
-          <div class="arch-node arch-main"><span>03</span><div><b>MediaManager</b><small>Session selection & commands</small></div></div>
-          <div class="arch-split"><div><i>↙</i><small>Background worker</small></div><div><i>↘</i><small>Native controller</small></div></div>
-          <div class="arch-bottom"><div class="arch-node"><span>04</span><div><b>Worker Thread</b><small>SMTC monitoring</small></div></div><div class="arch-node"><span>05</span><div><b>Native bridge</b><small>Rust / Node-API exploration</small></div></div></div>
-          <div class="arch-connector"><span>Windows media platform</span><i>↓</i></div>
-          <div class="arch-node arch-platform"><span>OS</span><div><b>Windows SMTC / GSMTC</b><small>System media sessions</small></div></div>
+          <div class="arch-node arch-main"><span>03</span><div><b data-i18n="archManagerTitle">MediaManager</b><small data-i18n="archManagerText">Session selection & commands</small></div></div>
+          <div class="arch-split"><div><i>↙</i><small data-i18n="archBackgroundWorker">Background worker</small></div><div><i>↘</i><small data-i18n="archNativeController">Native controller</small></div></div>
+          <div class="arch-bottom"><div class="arch-node"><span>04</span><div><b data-i18n="archWorkerTitle">Worker Thread</b><small data-i18n="archWorkerText">SMTC monitoring</small></div></div><div class="arch-node"><span>05</span><div><b data-i18n="archNativeTitle">Native bridge</b><small data-i18n="archNativeText">Rust / Node-API exploration</small></div></div></div>
+          <div class="arch-connector"><span data-i18n="archWindowsPlatform">Windows media platform</span><i>↓</i></div>
+          <div class="arch-node arch-platform"><span>OS</span><div><b data-i18n="archWindowsTitle">Windows SMTC / GSMTC</b><small data-i18n="archWindowsText">System media sessions</small></div></div>
         </div>
       </div>
     </section>

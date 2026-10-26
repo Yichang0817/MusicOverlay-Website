@@ -45,7 +45,7 @@ GitHub Pages presents the project; it does not run or distribute the Electron de
 
 ## Language switching
 
-The site supports English and Traditional Chinese (繁體中文). Use the language button in the header to switch the page language. The choice is saved in the browser, and the first visit defaults to the browser language when it is Chinese, or English otherwise.
+The site supports English and Traditional Chinese (繁體中文) across the navigation, hero, feature cards, screenshot and video galleries, engineering notes, architecture diagram, and roadmap. Use the language button in the header to switch the page language. The choice is saved in the browser, and the first visit defaults to the browser language when it is Chinese, or English otherwise.
 
 - `i18n.js` contains the translation dictionaries, language toggle behavior, accessibility-label translations, and saved language preference.
 - `index.html` marks translatable page content and accessibility attributes.
