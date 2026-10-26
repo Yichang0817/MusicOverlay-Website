@@ -1,6 +1,6 @@
 # MusicOverlay Website
 
-A static portfolio website for **MusicOverlay**, a lightweight Windows music overlay built with Electron, React, and TypeScript.
+A static black-and-gold portfolio website for **MusicOverlay**, a lightweight Windows music overlay built with Electron, React, and TypeScript. The supplied gold music-mark image is used as the site icon and favicon.
 
 ## Live site
 
