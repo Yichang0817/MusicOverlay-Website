@@ -252,9 +252,12 @@ code{font-family:"DM Mono",monospace;color:#f3d992;font-size:.93em}
 }
 
 
-/* Fix translated note spans and separate screenshot modes */
-.screenshots-note{width:100%;max-width:100%;box-sizing:border-box;min-width:0}
-.screenshots-note>span[data-i18n]{width:auto;height:auto;min-width:0;flex:1 1 auto;background:none;border-radius:0;overflow-wrap:anywhere}
+
+/* Correct bilingual note layout and mode-based screenshot groups */
+.screenshots-note{display:flex;align-items:flex-start;gap:9px;color:#8f846e;font-size:10px;line-height:1.7;margin:19px 1px 0;width:100%;max-width:100%;min-width:0;box-sizing:border-box}
+.screenshots-note>span:first-child{display:block;width:6px;height:6px;flex:0 0 6px;margin-top:6px;border-radius:50%;background:var(--accent)}
+.screenshots-note>span[data-i18n]{display:block;flex:1 1 auto;width:auto;height:auto;min-width:0;background:none;border-radius:0;overflow-wrap:anywhere}
+.demo-section .demo-note{display:flex;width:100%;max-width:100%;box-sizing:border-box;align-items:flex-start;line-height:1.7}
 .screenshot-mode-group{margin-top:30px}
 .screenshot-mode-heading{display:flex;align-items:flex-start;gap:15px;margin:0 0 18px;padding:18px 20px;border:1px solid var(--line);border-radius:12px;background:linear-gradient(110deg,rgba(241,189,80,.07),rgba(255,255,255,.012));min-width:0}
 .screenshot-mode-heading>div{min-width:0}
@@ -274,5 +277,4 @@ code{font-family:"DM Mono",monospace;color:#f3d992;font-size:.93em}
  .compact-screenshot-card{grid-template-columns:minmax(0,1fr)}
  .compact-screenshot-card .screenshot-media{border-right:0;border-bottom:1px solid var(--line)}
  .compact-screenshot-card .screenshot-card-copy{padding:18px}
- .demo-section .screenshots-note{font-size:10px}
 }
