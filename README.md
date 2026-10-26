@@ -41,3 +41,12 @@ The site is plain HTML and CSS. GitHub Pages can deploy it directly from the `ma
 Source code: https://github.com/Yichang0817/MusicOverlay
 
 GitHub Pages presents the project; it does not run or distribute the Electron desktop application.
+
+
+## Language switching
+
+The site supports English and Traditional Chinese (繁體中文). Use the language button in the header to switch the page language. The choice is saved in the browser, and the first visit defaults to the browser language when it is Chinese, or English otherwise.
+
+- `i18n.js` contains the translation dictionaries, language toggle behavior, accessibility-label translations, and saved language preference.
+- `index.html` marks translatable page content and accessibility attributes.
+- `style.css` styles the language control while preserving the existing black-and-gold theme.

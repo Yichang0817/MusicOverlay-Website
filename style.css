@@ -216,3 +216,11 @@ code{font-family:"DM Mono",monospace;color:#f3d992;font-size:.93em}
  .demo-media{padding:10px}
  .demo-card .screenshot-card-copy{padding:18px 18px 21px}
 }
+
+
+/* Header language switch */
+.language-toggle{appearance:none;border:1px solid rgba(241,189,80,.32);background:rgba(241,189,80,.08);color:var(--accent);border-radius:9px;padding:9px 12px;font:700 11px Manrope,ui-sans-serif,system-ui,sans-serif;cursor:pointer;white-space:nowrap;transition:background .2s,border-color .2s,transform .2s}
+.language-toggle:hover{background:rgba(241,189,80,.15);border-color:rgba(241,189,80,.55)}
+.language-toggle:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+@media(max-width:900px){.site-header{gap:12px}nav{gap:11px}.language-toggle{padding:8px 9px;font-size:10px}}
+@media(max-width:680px){.site-header{gap:9px}.site-header nav{display:flex;gap:7px}.language-toggle{padding:8px 9px;font-size:10px}}
