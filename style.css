@@ -438,3 +438,26 @@ code{font-family:"DM Mono",monospace;color:#f3d992;font-size:.93em}
  .hero-art.hero-screenshot{padding:8px 0 12px}
  .hero-art.hero-screenshot .screenshot-feature{max-width:100%}
 }
+
+
+/* Final asset scale: show the horizontal small-mode capture as a contained preview. */
+.hero-art.hero-screenshot .screenshot-feature{max-width:500px}
+.hero-art.hero-screenshot .screenshot-feature>img{
+  width:auto;
+  max-width:100%;
+  height:auto;
+  max-height:340px;
+  margin-inline:auto;
+}
+@media(min-width:1400px){
+  .hero-art.hero-screenshot .screenshot-feature{max-width:520px}
+  .hero-art.hero-screenshot .screenshot-feature>img{max-height:360px}
+}
+@media(max-width:900px){
+  .hero-art.hero-screenshot .screenshot-feature{max-width:440px}
+  .hero-art.hero-screenshot .screenshot-feature>img{max-height:300px}
+}
+@media(max-width:680px){
+  .hero-art.hero-screenshot .screenshot-feature{max-width:100%}
+  .hero-art.hero-screenshot .screenshot-feature>img{max-height:unset}
+}
