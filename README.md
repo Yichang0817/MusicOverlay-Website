@@ -15,14 +15,14 @@ The site is plain HTML and CSS. GitHub Pages can deploy it directly from the `ma
 - `index.html` — project overview, original screenshot gallery, video demo gallery, engineering notes, and roadmap
 - `style.css` — responsive black-and-gold theme and media presentation rules
 - `assets/musicoverlay-icon.png` — site brand icon and favicon
-- `assets/Screenshot 2026-10-26 11-10-07.png`
-- `assets/Screenshot 2026-10-26 11-12-03.png`
-- `assets/Screenshot 2026-10-26 11-16-00.png`
-- `assets/Screenshot 2026-10-26 11-21-13.png`
-- `assets/Screenshot 2026-10-26 11-33-58.png`
-- `assets/Screenshot 2026-10-26 11-54-52.png`
-- `assets/錄製內容 2026-10-26 113219.mp4` — Settings demo
-- `assets/錄製內容 2026-10-26 115107.mp4` — Player demo
+- `assets/player-one-ok-rock.png`
+- `assets/player-happy-end.png`
+- `assets/player-say-it-doesnt-cry.png`
+- `assets/player-ama-no-jaku.png`
+- `assets/player-compact-mode.png`
+- `assets/player-merry-christmas-mr-lawrence.png`
+- `assets/mol-settings-demo.mp4` — Settings demo
+- `assets/mol-player-demo.mp4` — Player demo
 
 ## Media quality
 
