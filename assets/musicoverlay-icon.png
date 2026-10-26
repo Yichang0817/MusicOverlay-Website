@@ -1,0 +1,1 @@
+User supplied image is a 1024x1024 RGBA PNG but GitHub text file API cannot safely write binary content; use uploaded icon via browser and commit normally.
