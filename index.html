@@ -17,6 +17,7 @@
     </a>
     <nav aria-label="Main navigation">
       <a href="#features">Features</a>
+      <a href="#screenshots">Screenshots</a>
       <a href="#engineering">Engineering</a>
       <a href="#roadmap">Roadmap</a>
       <a class="nav-cta" href="https://github.com/Yichang0817/MusicOverlay" target="_blank" rel="noreferrer">Source code ↗</a>
@@ -37,22 +38,15 @@
           <span>Electron</span><span>React</span><span>TypeScript</span><span>Windows SMTC</span>
         </div>
       </div>
-      <div class="hero-art" aria-label="Illustrative concept of the MusicOverlay player interface">
-        <div class="orb orb-one"></div><div class="orb orb-two"></div>
-        <div class="player-window">
-          <div class="player-top"><span class="window-dots"><i></i><i></i><i></i></span><span class="player-label">NOW PLAYING</span><span class="more">•••</span></div>
-          <div class="album-art">
-            <div class="album-sun"></div><div class="album-mountain mountain-a"></div><div class="album-mountain mountain-b"></div>
-            <span class="album-caption">AFTER<br>HOURS</span>
-          </div>
-          <div class="track-meta"><div><strong>Midnight Signals</strong><span>Illustrative track · Demo Artist</span></div><span class="heart">♡</span></div>
-          <div class="progress-track"><span></span></div>
-          <div class="time-row"><span>1:24</span><span>3:42</span></div>
-          <div class="player-controls"><span>〈</span><span class="play-button">Ⅱ</span><span>〉</span></div>
-          <p class="concept-note">CONCEPT MOCKUP · NOT A LIVE PLAYER</p>
-        </div>
-        <div class="floating-chip chip-top"><span class="chip-icon">♫</span><span><b>Desktop overlay</b><small>Stay in your workflow</small></span></div>
-        <div class="floating-chip chip-bottom"><span class="live-dot"></span><span><b>Windows media</b><small>SMTC integration</small></span></div>
+      <div class="hero-art hero-screenshot" aria-label="Actual MusicOverlay desktop player screenshot">
+        <div class="screenshot-glow" aria-hidden="true"></div>
+        <figure class="screenshot-feature">
+          <div class="screenshot-frame-top"><span class="frame-status"><i></i> ACTUAL APP SCREENSHOT</span><span>DESKTOP PLAYER</span></div>
+          <img src="assets/mol-player-main.webp" alt="MusicOverlay desktop player displaying a Japanese track, album artwork, playback progress and previous, pause and next controls." fetchpriority="high">
+          <figcaption><span class="caption-line"></span> Album artwork · Playback progress · Media controls</figcaption>
+        </figure>
+        <div class="floating-chip chip-top"><span class="chip-icon">♫</span><span><b>Real-time player</b><small>Windows desktop overlay</small></span></div>
+        <div class="floating-chip chip-bottom"><span class="live-dot"></span><span><b>Made for Windows</b><small>System media sessions</small></span></div>
       </div>
     </section>
 
@@ -77,10 +71,51 @@
       </div>
     </section>
 
+    <section class="section-wrap screenshots-section" id="screenshots">
+      <div class="section-heading">
+        <p class="eyebrow">02 / REAL SCREENSHOTS</p>
+        <h2>The real interface.<br><span>Not just a concept.</span></h2>
+        <p>Snapshots from the running MusicOverlay app, showing its compact player, personalization settings, and album-driven visual styles.</p>
+      </div>
+      <div class="screenshots-grid">
+        <article class="screenshot-card compact-card">
+          <div class="screenshot-media compact-media">
+            <img src="assets/mol-compact-mode.webp" alt="MusicOverlay Compact Mode showing album artwork, current track and artist, and playback progress." loading="lazy">
+          </div>
+          <div class="screenshot-card-copy">
+            <p class="screenshot-kicker">01 / COMPACT MODE</p>
+            <h3>Only what you need.</h3>
+            <p>A slim player view keeps album art, track details and playback progress visible while saving desktop space.</p>
+          </div>
+        </article>
+        <article class="screenshot-card settings-card">
+          <div class="screenshot-media settings-media">
+            <img src="assets/mol-settings.webp" alt="MusicOverlay settings panel with window size, player selection, transparency, brightness and corner-radius controls." loading="lazy">
+          </div>
+          <div class="screenshot-card-copy">
+            <p class="screenshot-kicker">02 / PERSONALIZATION</p>
+            <h3>Your overlay, your way.</h3>
+            <p>Choose a window size and player source, then fine-tune transparency, brightness and corner radius.</p>
+          </div>
+        </article>
+        <article class="screenshot-card background-card">
+          <div class="screenshot-media background-media">
+            <img src="assets/mol-album-background.webp" alt="MusicOverlay player showing blue by yung kai with ocean-themed artwork and coordinated background colors." loading="lazy">
+          </div>
+          <div class="screenshot-card-copy">
+            <p class="screenshot-kicker">03 / VISUAL STYLES</p>
+            <h3>Music sets the mood.</h3>
+            <p>Different tracks bring different artwork and color palettes to the overlay, adding personality without losing the essentials.</p>
+          </div>
+        </article>
+      </div>
+      <p class="screenshots-note"><span></span> Screenshots captured from the running application. Track names and album artwork are shown as examples.</p>
+    </section>
+
     <section class="architecture-section" id="engineering">
       <div class="section-wrap architecture-layout">
         <div class="section-heading">
-          <p class="eyebrow">02 / ENGINEERING</p>
+          <p class="eyebrow">03 / ENGINEERING</p>
           <h2>Built to connect<br><span>the right layers.</span></h2>
           <p>The renderer handles presentation while the Electron main process coordinates media access, IPC, and background work.</p>
           <a class="text-link" href="https://github.com/Yichang0817/MusicOverlay" target="_blank" rel="noreferrer">Explore the source repository ↗</a>
@@ -101,7 +136,7 @@
 
     <section class="section-wrap section-block challenge-section">
       <div class="section-heading">
-        <p class="eyebrow">03 / ENGINEERING CHALLENGES</p>
+        <p class="eyebrow">04 / ENGINEERING CHALLENGES</p>
         <h2>Beyond making it work.</h2>
         <p>The project has involved state synchronization, smooth UI updates, and bridging a desktop interface to Windows media sessions.</p>
       </div>
@@ -114,7 +149,7 @@
 
     <section class="section-wrap roadmap-section" id="roadmap">
       <div class="roadmap-panel">
-        <div><p class="eyebrow">04 / STATUS & ROADMAP</p><h2>A work in progress,<br><span>built in milestones.</span></h2><p>MusicOverlay is an evolving personal project. The current focus is validating the architecture, polishing the experience, and preparing a reliable public build.</p></div>
+        <div><p class="eyebrow">05 / STATUS & ROADMAP</p><h2>A work in progress,<br><span>built in milestones.</span></h2><p>MusicOverlay is an evolving personal project. The current focus is validating the architecture, polishing the experience, and preparing a reliable public build.</p></div>
         <div class="roadmap-items">
           <div class="roadmap-item complete"><span class="roadmap-mark">✓</span><div><b>Core overlay MVP</b><small>Track display, progress, playback actions</small></div><em>Completed</em></div>
           <div class="roadmap-item active"><span class="roadmap-mark">↗</span><div><b>Session manager & native path</b><small>Incremental integration and verification</small></div><em>In progress</em></div>
