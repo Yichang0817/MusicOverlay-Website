@@ -19,7 +19,7 @@ The site is plain HTML and CSS. GitHub Pages can deploy it directly from the `ma
 - `assets/player-happy-end.png`
 - `assets/player-say-it-doesnt-cry.png`
 - `assets/player-ama-no-jaku.png`
-- `assets/player-small-mode-ado.png` — Small Mode screenshot (437 × 212)
+- `assets/player-small-mode-ado.png` — Ado — 新時代 Small Mode screenshot (original uploaded PNG)
 - `assets/player-small-mode-lawrence.png` — Small Mode screenshot (573 × 287, original PNG)
 - `assets/player-compact-mode.png`
 - `assets/player-merry-christmas-mr-lawrence.png`
