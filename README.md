@@ -19,12 +19,17 @@ This site is plain HTML and CSS. It does not need npm, a bundler, or a build ste
 
 ## Files
 
-- `index.html` — page content and semantic sections
-- `style.css` — responsive dark theme and layout
+- `index.html` — page content, actual-app hero screenshot, screenshot gallery, and semantic sections
+- `style.css` — responsive black-and-gold theme and layout
+- `assets/musicoverlay-icon.png` — site brand icon and favicon
+- `assets/mol-player-main.webp` — main player screenshot
+- `assets/mol-compact-mode.webp` — Compact Mode screenshot
+- `assets/mol-settings.webp` — settings page screenshot
+- `assets/mol-album-background.webp` — alternate album/background screenshot
 
 ## Before sharing
 
-- Replace the illustrative player mockup in the hero section with genuine MusicOverlay screenshots when available.
+- The hero and screenshot gallery now use genuine screenshots from the running app. Recheck them if the UI changes.
 - Check all public text and screenshots for private paths, credentials, personal information, and unfinished-feature claims.
 - Add a GitHub Release link only after a Windows build has been packaged and validated.
 
