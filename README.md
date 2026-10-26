@@ -19,7 +19,8 @@ The site is plain HTML and CSS. GitHub Pages can deploy it directly from the `ma
 - `assets/player-happy-end.png`
 - `assets/player-say-it-doesnt-cry.png`
 - `assets/player-ama-no-jaku.png`
-- `assets/player-small-mode.webp` — Small Mode screenshot (437 × 212, WebP, optimized for the website)
+- `assets/player-small-mode.webp` — Small Mode screenshot (437 × 212)
+- `assets/player-small-mode-lawrence.png` — Small Mode screenshot (573 × 287, original PNG)
 - `assets/player-compact-mode.png`
 - `assets/player-merry-christmas-mr-lawrence.png`
 - `assets/mol-settings-demo.mp4` — Settings demo
@@ -27,7 +28,7 @@ The site is plain HTML and CSS. GitHub Pages can deploy it directly from the `ma
 
 ## Media quality
 
-- Six screenshots are retained as original PNG files. The new Small Mode capture is stored as an optimized WebP image to keep the repository lightweight.
+- The new Small Mode screenshot is stored as the original 573 × 287 PNG, without resizing or re-encoding. Other screenshots retain their existing formats.
 - The two demo videos use the uploaded MP4 files directly and are not transcoded by the website.
 - Image and video CSS uses intrinsic sizing, automatic height, and `max-width: 100%` to preserve aspect ratio and avoid enlarging media beyond the available layout width.
 - Media may render smaller than its native size on narrow screens; open any screenshot in a new tab to view the original file.
@@ -55,4 +56,4 @@ The site supports English and Traditional Chinese (繁體中文) across the navi
 
 ## Screenshot gallery
 
-Screenshots are grouped by the actual interface layout: Medium Mode (five full player examples), Small Mode (one horizontal player example), and Compact Mode (one slim player example). Images preserve their aspect ratios and are not forced to upscale.
+Screenshots are grouped by the actual interface layout: Medium Mode (four full player examples), Small Mode (two smaller player examples), and Compact Mode (one slim player example). Images preserve their aspect ratios and are not forced to upscale.
