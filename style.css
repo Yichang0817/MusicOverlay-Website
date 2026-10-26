@@ -506,3 +506,42 @@ code{font-family:"DM Mono",monospace;color:#f3d992;font-size:.93em}
  .hero-art.hero-screenshot .chip-top{align-self:flex-end}
  .hero-art.hero-screenshot .chip-bottom{align-self:flex-start}
 }
+
+
+/* Mobile hero polish: keep callouts around the product shot and compact the header. */
+@media(max-width:680px){
+  .site-header{padding:14px 16px 12px;gap:12px;align-items:center}
+  .site-header .brand{flex:0 0 auto}
+  .site-header nav{width:100%;display:flex;align-items:center;justify-content:flex-start;gap:8px 10px}
+  .site-header nav>a:not(.nav-cta){font-size:10px;line-height:1.4;white-space:nowrap}
+  .site-header nav .language-toggle{margin-left:auto;flex:0 0 auto}
+  .site-header nav .nav-cta{flex:0 0 auto;font-size:10px;padding:7px 9px;white-space:nowrap}
+
+  .hero.section-wrap{overflow:visible;gap:22px;padding-top:32px;padding-bottom:34px}
+  .hero-art.hero-screenshot{position:relative;isolation:isolate;padding:8px 0 30px;margin:0 2px;overflow:visible}
+  .hero-art.hero-screenshot .screenshot-feature{width:100%;max-width:100%;padding:8px;border-radius:13px}
+  .hero-art.hero-screenshot .screenshot-frame-top{font-size:7px;letter-spacing:.07em;gap:6px;padding:0 2px 7px}
+  .hero-art.hero-screenshot .screenshot-feature figcaption{font-size:8px;gap:6px;padding:8px 2px 2px;line-height:1.5}
+  .hero-art.hero-screenshot .screenshot-feature>img{width:100%;max-width:100%;height:auto;max-height:none}
+  .hero-art.hero-screenshot .chip-top,
+  .hero-art.hero-screenshot .chip-bottom{
+    position:absolute;inset:auto;z-index:3;width:max-content;max-width:58%;
+    margin:0;padding:7px 9px;gap:7px;border-radius:10px;
+    box-shadow:0 8px 20px rgba(0,0,0,.4);box-sizing:border-box;
+  }
+  .hero-art.hero-screenshot .chip-top{top:25%;right:-3px;left:auto;bottom:auto}
+  .hero-art.hero-screenshot .chip-bottom{top:62%;left:-3px;right:auto;bottom:auto}
+  .hero-art.hero-screenshot .floating-chip .chip-icon{width:27px;height:27px;flex:0 0 27px;border-radius:8px}
+  .hero-art.hero-screenshot .floating-chip .live-dot{width:6px;height:6px;flex:0 0 6px}
+  .hero-art.hero-screenshot .floating-chip b{font-size:9px;line-height:1.4}
+  .hero-art.hero-screenshot .floating-chip small{font-size:8px;line-height:1.4}
+}
+
+@media(max-width:390px){
+  .site-header{padding-inline:12px}
+  .site-header nav{gap:7px 8px}
+  .site-header nav>a:not(.nav-cta){font-size:9px}
+  .site-header nav .nav-cta,.site-header nav .language-toggle{font-size:9px;padding:7px 8px}
+  .hero-art.hero-screenshot .chip-top{right:-2px;max-width:61%}
+  .hero-art.hero-screenshot .chip-bottom{left:-2px;max-width:61%}
+}
