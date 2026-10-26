@@ -16,7 +16,7 @@ The site is plain HTML and CSS. GitHub Pages can deploy it directly from the `ma
 - `style.css` — responsive black-and-gold theme and media presentation rules
 - `assets/musicoverlay-icon.png` — site brand icon and favicon
 - `assets/player-one-ok-rock.png`
-- `assets/player-happy-end.png`
+- `assets/player-small-mode-horizontal.png`
 - `assets/player-say-it-doesnt-cry.png`
 - `assets/player-ama-no-jaku.png`
 - `assets/player-small-mode-ado.png` — Ado — 新時代 Small Mode screenshot (original uploaded PNG)
