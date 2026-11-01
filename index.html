@@ -173,7 +173,7 @@
         </article>
         </div>
       </div>
-      <p class="screenshots-note"><span></span> <span data-i18n="screenshotsNote">Original PNG files are used directly. Select an image to open the source-size file in a new tab.</span></p>
+      <p class="screenshots-note"><span></span> <span data-i18n="screenshotsNote">Original PNG files are used directly. Select an image to view it larger; standard link actions can still open the source file in a new tab.</span></p>
     </section>
 
     <section class="section-wrap demo-section" id="demo">
@@ -269,7 +269,29 @@
     </section>
   </main>
 
+  <div class="lightbox" id="screenshot-lightbox" hidden aria-hidden="true">
+    <div class="lightbox-backdrop" data-lightbox-close="true"></div>
+    <section class="lightbox-dialog" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" aria-describedby="lightbox-counter">
+      <div class="lightbox-toolbar">
+        <h2 class="lightbox-title" id="lightbox-title" tabindex="-1" data-i18n="lightboxTitle">Screenshot viewer</h2>
+        <button class="lightbox-button lightbox-close" type="button" data-lightbox-close="true" aria-label="Close image viewer" data-i18n-aria="lightboxClose" title="Close image viewer" data-i18n-title="lightboxClose">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="lightbox-stage">
+        <img class="lightbox-image" id="lightbox-image" src="" alt="">
+        <p class="lightbox-error" id="lightbox-error" role="status" hidden data-i18n="lightboxImageUnavailable">This image could not be loaded. You can choose another screenshot or close the viewer.</p>
+      </div>
+      <div class="lightbox-footer">
+        <button class="lightbox-button lightbox-previous" type="button" aria-label="Previous image" data-i18n-aria="lightboxPrevious" title="Previous image" data-i18n-title="lightboxPrevious"><span aria-hidden="true">←</span></button>
+        <output class="lightbox-counter" id="lightbox-counter" aria-label="Image position" data-i18n-aria="lightboxCounter" aria-live="polite"><span id="lightbox-current">1</span> / <span id="lightbox-total">7</span></output>
+        <button class="lightbox-button lightbox-next" type="button" aria-label="Next image" data-i18n-aria="lightboxNext" title="Next image" data-i18n-title="lightboxNext"><span aria-hidden="true">→</span></button>
+      </div>
+    </section>
+  </div>
+
   <footer class="site-footer section-wrap"><a class="brand" href="#top"><img class="brand-icon" src="assets/musicoverlay-icon.png" alt="" aria-hidden="true"><span>MusicOverlay</span></a><span data-i18n="footerText">Personal project · Windows desktop</span><a href="#top" data-i18n="backToTop">Back to top ↑</a></footer>
   <script src="i18n.js"></script>
+  <script src="interactions.js"></script>
 </body>
 </html>
